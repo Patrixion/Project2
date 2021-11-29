@@ -70,11 +70,7 @@ body {
     max-height: 1.5rem;
     margin-top: 0.5rem;
 }
-.sidebar__item:before{
-    padding-left: 1rem;
-    max-height: 1.5rem;
-    margin-top: 0.5rem;
-}
+
 .sidebar__item-icon{
     min-height: 25px;
     min-width: 25px;
