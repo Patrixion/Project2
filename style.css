@@ -3,29 +3,10 @@
     margin: 0px;
     padding: 0px;
 }
-html, body{
+
+body {
     display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    height: 100%;
-    width: 100%;
+    /* max-width: 360px; */
+    font-size: 1.3rem;
 }
 
-.container{
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-nav{
-    background-color: wheat;
-}
-.navigation{
-    width: 15%;
-    min-height: 100%;
-}
-.browser{
-    height: 10%;
-    min-width: 100%;
-    background-color: lawngreen;
-}
