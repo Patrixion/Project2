@@ -54,7 +54,8 @@ body {
     flex: auto;
 
 }
-.search__input::placeholder{
+
+.search__input::placeholder {
     color: #0004;
 }
 
@@ -125,39 +126,49 @@ body {
         min-width: 42rem;
     }
 }
+
 @media (min-width: 480px) {
     .search__container {
         min-width: 48rem;
     }
-    .content__images{
+
+    .content__images {
         justify-content: center;
     }
 }
+
 @media (min-width: 768px) {
     .search__container {
         min-width: auto;
     }
+
     .header__list {
         display: flex;
         flex-direction: row;
     }
-    .header__list-element{
+
+    .header__list-element {
         list-style: none;
         padding: 0 0.5rem;
         font-size: 1.4rem;
     }
+
     .header {
         flex-direction: row;
         align-items: center;
         min-height: 7rem;
     }
+
     .logo {
         margin: 0 0.5rem 0 0.5rem;
     }
-    .main{
+
+    .main {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
+
     .sidebar {
         max-width: 30rem;
         display: flex;
@@ -168,35 +179,86 @@ body {
         padding-bottom: 2rem;
         min-width: 18rem;
     }
-    .sidebar__item{
+
+    .sidebar__item {
         list-style: none;
     }
-    .content{
+
+    .content {
         display: flex;
         flex-direction: column;
+        margin-right: 2rem;
+
     }
-    .content__pair{
+
+    .content__pair {
         display: flex;
         flex-direction: row;
     }
-    
-    .content__images{
+
+    .content__images {
         display: flex;
-        max-height: auto;
-        min-width: 50%;
-        min-height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
     }
+
     .content__image-heightmax {
         flex-direction: row;
     }
-    
+
     .content__image-widthmax {
         flex-direction: column;
     }
-    .content__images-column{
+
+    .content__images-row {
+        flex-direction: inherit;
+    }
+
+    .content__image {
+        padding: auto;
+    }
+}
+
+@media (min-width: 960px) {
+    .header {
+        min-height: 10rem;
+        margin-right: 5rem;
+    }
+
+    .search__icon {
+        margin-left: 2.4rem;
+    }
+
+    .header__list-element {
+        margin-left: 4.2rem;
+        font-size: 2rem;
+    }
+
+    .header__list-element:first-child {
+        margin-left: 0rem;
+    }
+
+    .logo {
+        margin-left: 5.3rem;
+    }
+
+    .main {
+        justify-content: space-between;
+        gap: 8rem;
+    }
+    .sidebar{
+        justify-content: space-around;
+        margin-left: 5rem;
+    }
+    .sidebar__item{
+        margin-top: 4rem;
+    }
+    .content{
+        flex: auto;
 
     }
-    .content__images-row{
-
+    .content__pair{
+        justify-content: center;
     }
 }
